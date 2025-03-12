@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FastORM.Cache\FastORM.Cache.csproj" />
+    <ProjectReference Include="..\FastORM.EFCore\FastORM.EFCore.csproj" />
+    <ProjectReference Include="..\FastORM.Repository\FastORM.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
